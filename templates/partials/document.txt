@@ -1,0 +1,6 @@
+The hbs package, allows us to add partials into our code
+ in a super simple way. First, we need to register the 
+ partials. We need to call the registerPartials method 
+ of the hbs package and send as a parameter where we will
+  locate our partials. registerPartials provides a quick 
+  way to load all partials from a specific directory.
