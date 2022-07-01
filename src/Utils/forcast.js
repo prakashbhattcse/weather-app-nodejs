@@ -31,7 +31,7 @@ const forcast = (latitude,longitude,callback) => {
         } else if (body.error) {             // earlier code -  (response.body.error)
             callback('unable to find forcast', undefined)
         } else {
-            callback(undefined, 'It is currently ' + body.current.temperature + ' degrees out but feels like ' + body.current.feelslike)
+            callback(undefined, 'It is currently ' + body.current.temperature + ' degrees out but feels like ' + body.current.feelslike + ' and local date and time is ' + body.location.localtime)
         }
     })
 }
